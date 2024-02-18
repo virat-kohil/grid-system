@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.head {
+    /* display: flex;
+    justify-content: center; */
+    margin-top: 100px;
+}
+
+.head h3 {
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+/* .head 
+ {
+    display: flex;
+    justify-content: center;
+    margin-top:10px;
+} */
+
+
+.main h1 {
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button-box {
+    height: 60px;
+    width: 900px;
+    border: 1px solid blue;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 10px;
+    padding-left: 20px;
+    background-color: #fff;
+}
+
+.button-box button {
+    height: 50px;
+    border-radius: 30px;
+}
+
+.button-box input {
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Plans Button styles */
+
+.plans-sc {
+    display: flex;
+    justify-content: center;
+
+}
+
+.plans {
+    width: 40%;
+    height: 50px;
+    border: 2px solid lightgreen;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.plans>* {
+    height: 90%;
+    width: 49%;
+    outline: none;
+    border: none;
+
+    background-color: dodgerblue;
+    color: white;
+}
+
+.plans :nth-child(1) {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.plans :nth-child(2) {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+.plans :nth-child(1):hover {
+    background-color: lightgreen;
+}
+
+.plans :nth-child(2):hover {
+    background-color: brown;
+}
+
+/*---------------------------------------------- */
+.pricings {
+    height: max-content;
+    padding: 50px;
+    border: 3px solid gray;
+}
+
+.alexa {
+    display: flex;
+    gap: 10px;
+}
+
+.main-part {
+    min-height: 650px;
+    width: 33%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+    position: relative;
+}
+
+.box {
+    height: 10%;
+    width: 100%;
+    background-color: greenyellow;
+    /* border-radius: 15px; */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.basic {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-top: 30px;
+}
+
+.btn button {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    width: 120px;
+}
+
+.inr {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.inr p {
+    margin-bottom: 0 !important;
+    font-size: 15px;
+}
+
+.inr h1 {
+    font-size: 65px;
+}
+
+.line {
+    height: 1px;
+    width: 95%;
+    border: 1px solid gray;
+    margin-left: 10px;
+}
+
+.pppp {
+    font-weight: bold;
+    /* margin-left:20px; */
+    margin-top: 10px;
+}
+
+.button {
+    height: 50px;
+    width: 90%;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    font-size: 22px;
+    bottom: 50px;
+    margin-top: 50px;
+
+    /* position: absolute; */
+}
+
+.bi-check {
+    font-size: 28px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.contents p {
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar-toggler {
+    background-color: white !important;
+}
+
+@media screen and (max-width:850px) {
+    .gudu h4 {
+        text-align: center;
+    }
+
+    .button-box {
+        width: 99%;
+    }
+
+    .alexa {
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    /* .inr h1 {
+        font-size:20px;
+     } */
+    .plans {
+        width: 90%;
+    }
+
+    .main-part {
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .pricings {
+        padding: 10px;
+    }
+
+    .gudu h4 {
+        text-align: center;
+    }
+
+    .button-box .btn {
+        font-size: 10px;
+        width: 40%;
+    }
+
+    .alexa {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inr h1 {
+        font-size: 20px;
+    }
+
+    .plans {
+        width: 90%;
+    }
+
+    .main-part {
+        width: 90%;
+    }
+
+    .button {
+        margin-top: 50px;
+        position: relative;
+        margin-bottom: 20px;
+        bottom: 0;
+    }
+}
+
+/* Home page ra table */
+table {
+    margin-left:100px;
+    margin-top:20px;
+}
+table td {
+    border: 1px solid red;
+    height: 40px;
+}
+
+thead td {
+    text-align: center;
+    font-weight: bold;
+}
+
+tbody td {
+    text-align: center;
+}
+
+.number {
+    width: 40px;
+    /* border: 1px solid red; */
+}
+
+.boxes {
+    width: 420px;
+    /* border: 1px solid red; */
+}
+
+.boxes-1 {
+    
+    width: 600px;
+    /* border: 1px solid red; */
+}
+
+.freshers {
+    width: 130px;
+}
+
+.years {
+    width: 140px;
+}
+
+.years-1 {
+    width: 150px;
+}
+
+.years-10 {
+    width: 160px;
+}
+
+.years-11 {
+    width: 170px;
+}
+
+thead tr:nth-child(2) {
+    background-image: linear-gradient(to right top, #051237, #004272, #0079a2, #00b2be, #12ebc5);
+    color: #fff;
+}
+thead tr>:nth-child(2) .number{
+    background-image: linear-gradient(to right top, #e4eef2, #e6eff1, #e8f0f1, #eaf1f1, #edf2f1);
+}
+
+/* table end */
+

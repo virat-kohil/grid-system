@@ -1,0 +1,52 @@
+
+.microsoft-ftr {
+    margin-bottom: 10px;
+}
+
+/* .main {
+    height: 100vh;
+    background-color: blueviolet;
+} */
+
+.microsoft-ftr li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.ul :nth-child(1) {
+    font-weight: 800;
+    font: size 15px !important;
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+.flex p {
+    font-size: 13px;
+}
+
+.second-flex {
+    display: flex;
+    justify-content: end;
+    gap: 18px;
+}
+
+.second-flex p {
+    font-size: 13px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 650px) {
+    .head, .second-flex {
+        flex-direction: column;
+    }
+}
+
+
